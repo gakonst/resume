@@ -4,7 +4,7 @@
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{hyperref}
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textwidth}{5.2in} % Text width of the document
 \begin{document}
 %----------------------------------------------------------------------------------------
 %	NAME AND ADDRESS SECTION
@@ -14,62 +14,84 @@
 
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 
-\moveleft.5\hoffset\centerline{\url{https://gakonst.com} | \url{https://github.com/gakonst} |  \url{https://linkedin.com/in/gakonst} } % Your address
-\moveleft.5\hoffset\centerline{\url{me@gakonst.com}}
-\moveleft.5\hoffset\centerline{+30 6978832328}
+\moveleft.5\hoffset\centerline{\url{https://gakonst.com} | \url{https://github.com/gakonst}}
+\moveleft.5\hoffset\centerline{\url{https://linkedin.com/in/gakonst} | \url{https://twitter.com/gakonst}}
+
+\moveleft.5\hoffset\centerline{\url{me@gakonst.com},  +30 6978832328}
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\section{EDUCATION}
+\section{EDUCATION \& SKILLS}
 
-{\sl M.Eng. Electrical and Computer Engineering}, Aristotle University of Thessaloniki, School of Engineering, Thessaloniki, Greece, expected 2018 \\
-\textbf{Relevant Coursework:} Electronics, Electrical Circuits, Software Engineering, Data Structures, Structured/Object-Oriented Programming, Algorithms, Robotics, Controls, Microcontrollers, Operating/Distributed/Embedded Systems, Signal/Image Processing
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\section{TECHNOLOGY \\ SKILLS} 
-
-\textbf{Programming Languages:} Python, Solidity, Matlab, C, C++, Java \\
-\textbf{Operating Systems:} Windows, Linux (comfortable with multiple flavors)\\
-\textbf{Other:} Penetration Testing, Computer Networks, Raspberry Pi, Arduino
+{\sl M.Eng. Electrical and Computer Engineering}, Aristotle University of
+Thessaloniki, School of Engineering, Thessaloniki, Greece, 2013-2018 \\
+\textbf{Thesis:} \href{https://raw.githubusercontent.com/gakonst/thesis/master/main.pdf}{Decentralized Metering and Billing of Energy on Ethereum with Respect to Scalability and Security}\\
+\textbf{Programming Languages (proficient):} Rust, Go, TypeScript, Python,
+Solidity\\
+\textbf{Other:} Applied Cryptography, Mechanism Design, Distributed Systems
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
  
-\section{EXPERIENCE}
+\section{PROFESSIONAL EXPERIENCE}
 
-{\sl Independent Smart Contract Auditor} \hfill March 2017-Present
+{\sl Independent Consultant} \hfill March 2018-Present
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Auditing of smart contracts including ICOs, Tokens (ERC20, ERC223, ERC721) and Platforms.
-    \item Utilizing automated tooling and scripting for detection of well-known vulnerabilities as well as advising on best practices and optimizations.
+    \item Engineering, mechanism design and code auditing
+    \item Notable projects: 
+        \begin{itemize}
+            \item \href{https://interledger.org/}{Interledger protocol}
+    implementation in \href{https://github.com/emschwartz/interledger-rs}{Rust}
+            \item \href{http://tbtc.network}{TBTC}, Bitcoin on Ethereum
+            utilizing threshold-ECDSA, a BLS random beacon, compact SPV
+            proofs and sound cryptoeconomic design
+        \end{itemize}
 \end{itemize}
 
-{\sl Researcher and Technical Writer} \hfill October 2017-Present \\
+{\sl Lead Researcher and Engineer} \hfill October 2017-June 2019 \\
 \textbf{Loom Network} \hfill \url{https://loomx.io}
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Performing research on blockchain scalability.
-    \item Implementing Plasma for scaling Ethereum through sidechains.
-    \item Writing articles on blockchain fundamentals, security and scalability.
+    \item Research and development on trust-minimized sidechains for Ethereum
+    \item Managed the onboarding process of 21 validators on the staking platform
+    \item Implemented a Delegated Proof of Stake algorithm on top of Tendermint
+    \item Implemented cross-chain communication smart contracts \href{https://web.archive.org/web/20190614104207/https://etherscan.io/address/0x8f8E8b3C4De76A31971Fe6a87297D8f703bE8570}{which escrowed
+    over \$14,000,000}
+    \item Implemented \href{http://github.com/loomnetwork/plasma-cash}{Plasma Cash}, a Layer-2 solution for Ethereum
 \end{itemize}
 
 {\sl Software Engineering Intern} \hfill July 2017-December 2017\\
 \textbf{Honda R\&D Germany} \hfill \url{http://www.honda.de}
 \begin{itemize} \itemsep -2pt % Reduce space between items
     \item Researched blockchain applications on energy markets. 
-    \item Developed and tested proprietary smart contracts (tools: Solidity, Truffle Framework, OpenZeppelin, Ganache, Web3.js, Web3.py).
-    \item Developed secure cryptographic key generation for IoT devices and interacted with REST APIs in Python.
-    \item Managed and set up server for prototyping and local network deployment.
+    \item Developed and tested proprietary smart contracts (tools: Solidity, Truffle Framework, OpenZeppelin, Ganache, Web3.js, Web3.py)
 \end{itemize}
 
 {\sl Founder} \hfill January 2017-June 2017 \\
 \textbf{ThessSec} \hfill \url{https://github.com/ThessSec}
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Organized bi-weekly meetups on information security and privacy.
-    \item Presented talks on Bitcoin, Web Application Penetration Testing, Network Security (among others).
-    \item Educated attendees by leading discussions and interactive workshops.
+    \item Organized and led bi-weekly student meetups and interactive workshops on information security and privacy
+    \item Taught about Bitcoin, Web Application Penetration Testing, Network
+    Security (among others) to over 200 students in total
 \end{itemize}
+
+\section{RESEARCH, WRITING \& PUBLIC SPEAKING}
+
+\begin{itemize}
+    \item \href{https://github.com/gakonst/plasma-cash-paper/raw/master/plasma_cash.pdf}{\textit{Plasma Cash: Towards Improved Plasma Constructions}}, presented in
+    \href{https://youtu.be/9nD1elfVshc}{Stanford Blockchain Conference}, 
+    \href{https://www.youtube.com/watch?v=ZQg_IckcvNI}{MIT Bitcoin Expo}, \href{https://www.youtube.com/watch?v=UKigyHGQQmQ}{Devcon4}.
+    Weak reject from \href{https://aft.acm.org/}{AFT2019}
+    \item \textit{Non-Custodial sidechains for Bitcoin using Plasma Cash and
+    Covenants}, to be presented at \href{https://telaviv2019.scalingbitcoin.org/#schedule}{Scaling Bitcoin 2019} (full paper TBD)
+    \item \href{https://medium.com/@gakonst}{Personal blog} with over 775,000
+    views. Notable posts: "How I hacked 40 Websites in 7 minutes", "Deep Dive on
+    RSA Accumulators"
+    \item Full list of talks \href{https://www.gakonst.com/talks/}{here}.
+\end{itemize}
+
+
 
 %  {\sl Co-Founder | Software Engineering } \hfill February 2016 - September 2016 \\
 %  \textbf{Project M.A.R.T.I.S.}, Thessaloniki Greece
@@ -78,15 +100,15 @@
 %  \item  Our team qualified to the finals of the panhellenic ECE students’ conference (ECESCON) Hackathon
 %  \end{itemize}
 %  \section{OTHER}
-\textbf{Professional:}
-Writing on security and blockchain at \url{https://medium.com/@gakonst}, % (Top writer in Bitcoin) 
-IEEE Member \& Event Organizer, attending conferences and local meetups whenever possible.\\
-\textbf{Misc. Interests:}
-Autonomous Vehicles, Cybersecurity and Privacy, Blockchain, Internet of Things, Wearables, Boxing, Blues Guitar\\
-\textbf{MOOCs}:
-Cryptography I, Machine Learning by Stanford University, Using Python for Research by Harvard University\\
-\textbf{Languages:}
-Greek, English, Japanese, French  
+% \textbf{Professional:}
+% Writing on security and blockchain at \url{https://medium.com/@gakonst}, % (Top writer in Bitcoin) 
+% IEEE Member \& Event Organizer, attending conferences and local meetups whenever possible.\\
+% \textbf{Misc. Interests:}
+% Autonomous Vehicles, Cybersecurity and Privacy, Blockchain, Internet of Things, Wearables, Boxing, Blues Guitar\\
+% \textbf{MOOCs}:
+% Cryptography I, Machine Learning by Stanford University, Using Python for Research by Harvard University\\
+% \textbf{Languages:}
+% Greek, English, Japanese, French  
 
 
 % \section{HONORS \& AWARDS}
